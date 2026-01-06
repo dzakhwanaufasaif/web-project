@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klinik Sahabat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+.card {
+  transition: transform .2s ease, box-shadow .2s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.card-img-top {
+      height: 200px;
+      object-fit: contain;
+      padding: 10px;
+      background-color: #f8f9fa;
+    }
+
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .btn {
+  margin-top: auto;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #eaeaea;
+}
+
+body.dark .navbar,
+body.dark .accordion-item,
+body.dark footer {
+  background-color: #1e1e1e !important;
+  color: #eaeaea;
+}
+
+body.dark .accordion-button {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+body.dark .accordion-button:not(.collapsed) {
+  background-color: #2a2a2a;
+}
+
+body.dark .accordion-body {
+  background-color: #1e1e1e;
+}
+
+.custom-navbar {
+background-color: #004aad;
+color: white;
+}
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+color: white;
+}
+.custom-navbar .nav-link:hover {
+color: #cce0ff;
+}
+
+</style>
+  </head>
+<body>
+<!-- HEADER -->
+<!-- NAVIGATION BAR -->
+<nav class="navbar navbar-expand-lg custom-navbar navbar-container">
+    <div class="container-fluid brand-link">
+        <a class="navbar-brand navbar-link">
+          <img src="images/logoklinik.png" alt="" class="logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Layanan
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="rawatinap.html">Rawat Inap</a></li>
+                        <li><a class="dropdown-item" href="farmasi.html">Farmasi</a></li>
+                        <li><a class="dropdown-item" href="konsultasi.html">Checkup</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        S&K
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="snk.html">Syarat Ketentuan</a></li>
+                        <li><a class="dropdown-item" href="kp.html">Kebijakan Privasi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kamus.html">Kamus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tentangkami.html">Tentang Kami</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- BODY -->
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Parasetamol
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Parasetamol atau asetaminofen adalah obat analgesik dan antipiretik</strong> yang banyak dipakai untuk meredakan sakit kepala ringan akut, nyeri ringan hingga sedang, serta demam. Manfaatnya dalam penanganan demam kurang tepercaya.Berbeda dengan obat analgesik yang lain seperti aspirin dan ibuprofen, parasetamol memiliki sifat antiinflamasi (antiradang) yang sangat lemah sehingga tidak dapat menggantikan obat-obat tersebut pada penanganan sejumlah penyakit 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Oralit
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Oralit adalah larutan elektrolit yang digunakan untuk mengatasi dehidrasi ringan hingga sedang, terutama akibat diare atau muntah.</strong> Oralit mengandung gula, natrium klorida, dan kalium klorida dalam proporsi tertentu untuk membantu memulihkan cairan dan elektrolit tubuh. Ini sangat efektif dalam pencegahan dan pengobatan dehidrasi pada anak-anak dan dewasa.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        OBH Combi
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>OBH Combi adalah obat batuk yang mengandung kombinasi beberapa zat aktif seperti pseudophedrin, dextromethorphan, dan parasetamol.</strong> Zat aktif ini bekerja untuk mengatasi gejala batuk, pilek, dan demam. Pseudophedrin membantu meredam hidung tersumbat, dextromethorphan menghambat refleks batuk, dan parasetamol membantu menurunkan demam serta meredam nyeri. OBH Combi digunakan untuk mengatasi gejala pilek dan batuk ringan hingga sedang.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+        Promag
+      </button>
+    </h2>
+    <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Promag adalah obat antasida yang mengandung magnesium trisilikat dan aluminium hidroksida.</strong> Obat ini digunakan untuk mengatasi gejala maag, asam lambung berlebih, dan nyeri lambung akibat gastritis atau ulkus lambung. Promag bekerja dengan menetralkan asam lambung dan melindungi lapisan lambung dari iritasi.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+        Vitacimin
+      </button>
+    </h2>
+    <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Vitacimin adalah suplemen vitamin C yang digunakan untuk meningkatkan daya tahan tubuh dan mencegah defisiensi vitamin C.</strong> Vitamin C berperan penting dalam menjaga kesehatan kulit, gusi, dan sistem kekebalan tubuh. Vitacimin biasanya dikonsumsi untuk membantu mempercepat pemulihan dari penyakit seperti flu atau demam.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+        Amoxicillin
+      </button>
+    </h2>
+    <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Amoxicillin adalah antibiotik golongan penisilin yang digunakan untuk mengobati berbagai infeksi bakteri.</strong> Obat ini efektif melawan infeksi saluran pernapasan, infeksi telinga, infeksi saluran kemih, dan infeksi kulit. Amoxicillin bekerja dengan menghambat pertumbuhan bakteri, sehingga membantu sistem kekebalan tubuh dalam melawan infeksi.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+        Cetirizine
+      </button>
+    </h2>
+    <div id="collapseseven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Cetirizine adalah antihistamin yang digunakan untuk mengatasi gejala alergi seperti bersin, hidung meler, gatal-gatal, dan mata berair.</strong> Obat ini bekerja dengan menghambat efek histamin, zat kimia yang dilepaskan oleh tubuh selama reaksi alergi. Cetirizine sering digunakan untuk mengobati rhinitis alergi dan urtikaria (biduran).
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
+        Ibuprofen
+      </button>
+    </h2>
+    <div id="collapseeight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Ibuprofen adalah obat antiinflamasi nonsteroid (NSAID) yang digunakan untuk meredakan nyeri, peradangan, dan demam.</strong> Obat ini efektif untuk mengatasi berbagai jenis nyeri seperti sakit kepala, nyeri otot, nyeri sendi, dan nyeri haid. Ibuprofen bekerja dengan menghambat enzim yang terlibat dalam proses peradangan di tubuh.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine">
+        Loratadine
+      </button>
+    </h2>
+    <div id="collapsenine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Loratadine adalah antihistamin non-sedatif yang digunakan untuk mengatasi gejala alergi seperti rhinitis alergi dan urtikaria.</strong> Obat ini bekerja dengan menghambat efek histamin di tubuh tanpa menyebabkan kantuk, sehingga sering dipilih untuk mengobati alergi pada siang hari.
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+
+<!-- FOOTER -->
+ <footer class="footer-section text-white pt-5 pb-3">
+  <div class="container">
+    
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-6 text-center">
+        <h5 class="mb-3 fw-bold"><i class="fas fa-clock me-2"></i>Jam Operasional</h5>
+        <div class="table-responsive">
+          <table class="table table-sm table-borderless text-white mx-auto" style="max-width: 400px;">
+            <tbody>
+              <tr>
+                <td class="text-start">Senin - Jumat</td>
+                <td class="text-end">08:00 - 21:00</td>
+              </tr>
+              <tr>
+                <td class="text-start">Sabtu</td>
+                <td class="text-end">08:00 - 17:00</td>
+              </tr>
+              <tr>
+                <td class="text-start">Minggu / Hari Libur</td>
+                <td class="text-end text-danger fw-bold">Tutup (Emergency Only)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center text-center mb-0">
+      <div class="col-6 col-md-2 mb-3">
+        <a href="https://www.instagram.com/hilman__237/" class="instagram-link">
+          <i class="fab fa-instagram fa-2x mb-2"></i>
+          <p class="username-text">@hilman__237</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <a href="https://www.instagram.com/ftmhazzhra_2/" class="instagram-link">
+          <i class="fab fa-instagram fa-2x mb-2"></i>
+          <p class="username-text">@ftmhazzhra_2</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <a href="https://www.instagram.com/jekisipelaut/" class="instagram-link">
+          <i class="fab fa-instagram fa-2x mb-2"></i>
+          <p class="username-text">@jekisipelaut</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <a href="https://www.instagram.com/pange_ran565/" class="instagram-link">
+          <i class="fab fa-instagram fa-2x mb-2"></i>
+          <p class="username-text">@pange_ran565</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <a href="https://www.instagram.com/_faizkri/" class="instagram-link">
+          <i class="fab fa-instagram fa-2x mb-2"></i>
+          <p class="username-text">@_faizkri</p>
+        </a>
+      </div>
+    </div>
+
+    <hr class="bg-black opacity-25">
+
+    <div class="row">
+      <div class="col text-center">
+        <p class="small mb-0">&copy; 2025 Klinik Sahabat. All Rights Reserved.</p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.getElementById("darkBtn").onclick = function () {
+  document.body.classList.toggle("dark");
+};
+</script>
+ 
+
+
+
+
+</body>
+</html>

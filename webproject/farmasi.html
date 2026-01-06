@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan - Klinik Sahabat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .form-container {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .form-title {
+            color: #004aad;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        .btn-submit {
+            background-color: #004aad;
+            border-color: #004aad;
+            padding: 10px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #004aad;
+            border-color: #004aad;
+            transform: translateY(-2px);
+        }
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 20px;
+            }
+        }
+        .custom-navbar {
+background-color: #004aad;
+color: white;
+}
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+color: white;
+}
+.custom-navbar .nav-link:hover {
+color: #cce0ff;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+     <!-- Navigasi -->
+    <nav class="navbar navbar-expand-lg custom-navbar navbar-container">
+    <div class="container-fluid brand-link">
+        <a class="navbar-brand navbar-link">
+          <img src="images/logoklinik.png" alt="" class="logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Layanan
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="rawatinap.html">Rawat Inap</a></li>
+                        <li><a class="dropdown-item" href="farmasi.html">Farmasi</a></li>
+                        <li><a class="dropdown-item" href="konsultasi.html">Checkup</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        S&K
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="snk.html">Syarat Ketentuan</a></li>
+                        <li><a class="dropdown-item" href="kp.html">Kebijakan Privasi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kamus.html">Kamus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tentangkami.html">Tentang Kami</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+     <!-- BODY -->
+    <main>  
+        <section class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="form-container">
+                        <h2 class="form-title text-center">Pemesanan resep obat</h2>
+                        <p class="text-center mb-4">Pesanan obat anda akan kami proses setelah mengisi form persyaratan yang ada di bawah sini.</p>
+
+                        <!-- Form Pemesanan -->
+                        <form id="orderForm" novalidate>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="patientName" class="form-label">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="patientName" required>
+                                    <div class="invalid-feedback">Mohon masukkan nama lengkap Anda.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="phoneNumber" class="form-label">Nomor Telepon</label>
+                                    <input type="tel" class="form-control" id="phoneNumber" required>
+                                    <div class="invalid-feedback">Mohon masukkan nomor telepon yang valid.</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">Mohon masukkan alamat email yang valid.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Alamat Pengiriman</label>
+                                <textarea class="form-control" id="address" rows="3" required></textarea>
+                                <div class="invalid-feedback">Masukkan alamat pengiriman.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="recipeImage" class="form-label">Unggah Foto Resep</label>
+                                <input type="file" class="form-control" id="recipeImage" accept="image/*" required>
+                                <div class="invalid-feedback">Unggah foto resep.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="notes" class="form-label">Catatan Tambahan (Opsional)</label>
+                                <textarea class="form-control" id="notes" rows="2"></textarea>
+                            </div>
+
+                            <!-- Link Internal dan Eksternal (Media Requirement) -->
+                            <div class="mb-3">
+                                <p>Butuh bantuan? <a href="kontakkami.html" target="_blank">Kontak kami.</a></p>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary btn-submit">Kirim Pesanan</button>
+                            </div>
+                        </form>
+
+                        <!-- Pesan Sukses -->
+                        <div id="successMessage" class="alert alert-success mt-4" style="display: none;">
+                            <h4 class="alert-heading">Pesanan Berhasil Dikirim!</h4>
+                            <p>Terima kasih telah mengirimkan pesanan Anda. Kami akan memprosesnya segera dan
+                                menghubungi Anda melalui nomor telepon yang Anda berikan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+ <footer class="footer-section text-white pt-5 pb-3">
+  <div class="container">
+    
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-6 text-center">
+        <h5 class="mb-3 fw-bold"><i class="fas fa-clock me-2"></i>Jam Operasional</h5>
+        <div class="table-responsive">
+          <table class="table table-sm table-borderless text-white mx-auto" style="max-width: 400px;">
+            <tbody>
+              <tr>
+                <td class="text-start">Senin - Jumat</td>
+                <td class="text-end">08:00 - 21:00</td>
+              </tr>
+              <tr>
+                <td class="text-start">Sabtu</td>
+                <td class="text-end">08:00 - 17:00</td>
+              </tr>
+              <tr>
+                <td class="text-start">Minggu / Hari Libur</td>
+                <td class="text-end text-danger fw-bold">Tutup (Emergency Only)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center text-center mb-0">
+      <div class="col-6 col-md-2 mb-3">
+        <a href="https://www.instagram.com/hilman__237/" class="instagram-link">
+          <i class="fab fa-instagram fa-2x mb-2"></i>
+          <p class="username-text">@hilman__237</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <a href="https://www.instagram.com/ftmhazzhra_2/" class="instagram-link">
+          <i class="fab fa-instagram fa-2x mb-2"></i>
+          <p class="username-text">@ftmhazzhra_2</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <a href="https://www.instagram.com/jekisipelaut/" class="instagram-link">
+          <i class="fab fa-instagram fa-2x mb-2"></i>
+          <p class="username-text">@jekisipelaut</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <a href="https://www.instagram.com/pange_ran565/" class="instagram-link">
+          <i class="fab fa-instagram fa-2x mb-2"></i>
+          <p class="username-text">@pange_ran565</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <a href="https://www.instagram.com/_faizkri/" class="instagram-link">
+          <i class="fab fa-instagram fa-2x mb-2"></i>
+          <p class="username-text">@_faizkri</p>
+        </a>
+      </div>
+    </div>
+
+    <hr class="bg-black opacity-25">
+
+    <div class="row">
+      <div class="col text-center">
+        <p class="small mb-0">&copy; 2025 Klinik Sahabat. All Rights Reserved.</p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+    <!-- Tombol Kembali ke Atas -->
+    <button id="scrollTopBtn" class="scroll-to-top" title="Kembali ke Atas"><i
+            class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Fitur Interaktif 1: Validasi Form
+        document.addEventListener('DOMContentLoaded', function () {
+            const orderForm = document.getElementById('orderForm');
+            const successMessage = document.getElementById('successMessage');
+
+            orderForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+
+                if (orderForm.checkValidity()) {
+                    // Tampilkan pesan sukses
+                    successMessage.style.display = 'block';
+
+                    // Reset form
+                    orderForm.reset();
+                    orderForm.classList.remove('was-validated');
+
+                    // Scroll ke pesan sukses
+                    successMessage.scrollIntoView({ behavior: 'smooth' });
+
+                    // Sembunyikan pesan sukses setelah 5 detik
+                    setTimeout(() => {
+                        successMessage.style.display = 'none';
+                    }, 5000);
+                } else {
+                    orderForm.classList.add('was-validated');
+                }
+            });
+
+            // Fitur Interaktif 2: Tombol Kembali ke Atas
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+            window.addEventListener('scroll', () => {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    scrollTopBtn.style.display = "block";
+                } else {
+                    scrollTopBtn.style.display = "none";
+                }
+            });
+
+            scrollTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Fitur Interaktif 3: Animasi Input Focus
+            const formInputs = document.querySelectorAll('input, textarea');
+
+            formInputs.forEach(input => {
+                input.addEventListener('focus', function () {
+                    this.parentElement.classList.add('form-focus');
+                });
+
+                input.addEventListener('blur', function () {
+                    this.parentElement.classList.remove('form-focus');
+                });
+            });
+
+            // Fitur Interaktif 4: Preview Gambar
+            const recipeImage = document.getElementById('recipeImage');
+            let imagePreview = document.createElement('img');
+            imagePreview.className = 'img-fluid mt-2 rounded';
+            imagePreview.style.maxHeight = '200px';
+            imagePreview.style.display = 'none';
+
+            recipeImage.parentElement.appendChild(imagePreview);
+
+            recipeImage.addEventListener('change', function () {
+                const file = this.files[0];
+
+                if (file) {
+                    const reader = new FileReader();
+
+                    reader.addEventListener('load', function () {
+                        imagePreview.setAttribute('src', this.result);
+                        imagePreview.style.display = 'block';
+                    });
+
+                    reader.readAsDataURL(file);
+                } else {
+                    imagePreview.style.display = 'none';
+                }
+            });
+
+            // Fitur Interaktif 5: Animasi Hover pada Tombol Submit
+            const submitBtn = document.querySelector('.btn-submit');
+
+            submitBtn.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-2px)';
+                this.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
+            });
+
+            submitBtn.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            });
+        });
+
+        // ini css buat kalo di klik kembali keatas
+        const style = document.createElement('style');
+        style.textContent = `
+            .scroll-to-top {
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                z-index: 100;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: #3498db;
+                color: white;
+                border: none;
+                cursor: pointer;
+                display: none;
+                font-size: 18px;
+                transition: all 0.3s ease;
+            }
+            
+            .scroll-to-top:hover {
+                background-color: #2980b9;
+            }
+            
+            .form-focus {
+                transform: scale(1.02);
+                transition: transform 0.2s ease;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>

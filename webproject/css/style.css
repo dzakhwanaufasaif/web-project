@@ -1,0 +1,150 @@
+/* HEADER*/
+.btn-primary {
+    --bs-btn-color: #fff !important;
+    --bs-btn-bg: #004aad !important;
+}
+/* NAVBAR */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;
+    
+    background-color: #004aad;
+    
+    color: white !important;
+      font-family: Arial,sans-serif;
+      font-weight: 300;font-style: normal;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand .brand-link {
+    display: flex;
+    align-items: center;
+    color: white !important;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar-brand .logo {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+
+.navbar-links li {
+    margin-left: 30px; /* Jarak antar tautan */
+    position: relative; /* Penting untuk positioning dropdown */
+}
+
+/* Styling Teks Tautan (a) */
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    font-size: 16px;
+    transition: color 0.3s; /* Efek transisi simple */
+}
+
+.navbar-links a:hover {
+    color: #cce0ff; /* Perubahan warna saat di-hover */
+}
+
+/* Styling Dropdown */
+.dropdown-menu {
+    display: none; /* Sembunyikan dropdown secara default */
+    position: absolute;
+    top: 100%; /* Tempatkan di bawah tombol 'Layanan' */
+    left: 0;
+    background-color: #004aad; /* Background dropdown */
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Tampilkan dropdown saat parent di-hover */
+}
+
+.dropdown-menu li a {
+    padding: 8px 15px;
+    white-space: nowrap;
+    color: #cce0ff;
+    background-color: transparent;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #004aad; /* Warna hover untuk item dropdown */
+}
+
+.dropdown-toggle::after {
+    font-size: 10px;
+}
+
+/* BODY */
+/* BANNER */
+.banner{
+    background: url("https://cdn.discordapp.com/attachments/1446879749178654924/1454988387512746197/kliniksahabatbanner.png?ex=695a5747&is=695905c7&hm=46699aa505e1ebdbc34f5d9c36181f4d43f04b021def507adb966db81903f23d");
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 15%;
+    color: aliceblue;
+}
+
+.banner h3{
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    }
+/* FASILITAS */
+.lingkaran{
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    color: #004aad;
+}
+.lingkaran i{
+    position: relative;
+    margin-top: 5%;
+}
+
+/* FOOTER */
+.footer-section{
+    background-color: #004aad;
+}
+.footer-section table td {
+    padding: 8px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-section h5 {
+    color: white !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.footer-section table tr:last-child td {
+    border-bottom: none;
+}
+
+.instagram-link {
+    color: white !important;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.instagram-link:hover {
+    color: grey !important;
+}

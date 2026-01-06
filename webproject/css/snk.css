@@ -1,0 +1,76 @@
+:root {
+    --main-blue: #0056b3;
+    --dark-text: #2c3e50;
+    --card-bg: #ced4da;
+    --scrollbar-thumb: #868e96;
+}
+
+
+.sk-container {
+    background-color: var(--card-bg);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+}
+
+.sk-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sk-title {
+    color: var(--dark-text);
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.sk-divider {
+    border: none;
+    border-top: 2px solid black;
+    width: 100%;
+    opacity: 0.3;
+}
+
+/* Scrollable Content */
+.sk-content {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 30px; /* Ruang untuk scrollbar */
+    color: black;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* CUSTOM SCROLLBAR (Agar persis seperti gambar) */
+.sk-content::-webkit-scrollbar {
+    width: 12px;
+}
+
+.sk-content::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+    border-radius: 10px;
+}
+
+.sk-content::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 10px;
+    border: 2px solid var(--scrollbar-track); /* Memberi kesan padding */
+}
+
+.sk-content::-webkit-scrollbar-thumb:hover {
+    background: #6c757d;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .sk-container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .sk-title {
+        font-size: 22px;
+    }
+}

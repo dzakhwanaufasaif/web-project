@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klinik Sahabat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+.card {
+  transition: transform .2s ease, box-shadow .2s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.card-img-top {
+      height: 200px;
+      object-fit: contain;
+      padding: 10px;
+      background-color: #d3e9ff;
+    }
+
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .btn {
+  margin-top: auto;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #eaeaea;
+}
+
+body.dark .navbar,
+body.dark .accordion-item,
+body.dark footer {
+  background-color: #1e1e1e !important;
+  color: #eaeaea;
+}
+
+body.dark .accordion-button {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+body.dark .accordion-button:not(.collapsed) {
+  background-color: #2a2a2a;
+}
+
+body.dark .accordion-body {
+  background-color: #1e1e1e;
+}
+.custom-navbar {
+background-color: #004aad;
+color: white;
+}
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+color: white;
+}
+.custom-navbar .nav-link:hover {
+color: #cce0ff;
+}
+</style>
+  </head>
+<body>
+<!-- HEADER -->
+<!-- NAVIGATION BAR -->
+<nav class="navbar navbar-expand-lg custom-navbar navbar-container">
+    <div class="container-fluid brand-link">
+        <a class="navbar-brand navbar-link">
+          <img src="images/logoklinik.png" alt="" class="logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Layanan
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="rawatinap.html">Rawat Inap</a></li>
+                        <li><a class="dropdown-item" href="farmasi.html">Farmasi</a></li>
+                        <li><a class="dropdown-item" href="konsultasi.html">Checkup</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        S&K
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="snk.html">Syarat Ketentuan</a></li>
+                        <li><a class="dropdown-item" href="kp.html">Kebijakan Privasi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kamus.html">Kamus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tentangkami.html">Tentang Kami</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- BODY -->
+ <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="images/Diare.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Diare</h5>
+        <p class="card-text">Diare adalah kondisi gangguan pencernaan ditandai dengan buang air besar (BAB) encer atau berair lebih sering dari biasanya (3 kali atau lebih dalam sehari), bisa disertai lendir atau darah, biasanya disebabkan infeksi virus, bakteri, parasit, atau makanan/minuman terkontaminasi, dan berisiko menyebabkan dehidrasi jika tidak ditangani.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/dbd.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">DBD</h5>
+        <p class="card-text">DBD adalah singkatan dari Demam Berdarah Dengue, yaitu penyakit infeksi virus yang ditularkan melalui gigitan nyamuk Aedes aegypti dan Aedes albopictus, ditandai demam tinggi mendadak, nyeri otot/sendi, sakit kepala, dan ruam, yang bisa berujung pada pendarahan serius atau syok jika parah, dan sangat umum terjadi di daerah tropis seperti Indonesia. Pencegahan utamanya dengan membasmi sarang nyamuk (3M Plus: Menguras, Menutup, Mendaur ulang) dan menghindari gigitan nyamuk.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/diabetes.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Diabetes</h5>
+        <p class="card-text">Diabetes adalah penyakit kronis akibat kadar gula (glukosa) darah yang tinggi karena tubuh tidak mampu memproduksi cukup insulin atau tidak dapat menggunakan insulin secara efektif, menyebabkan gula menumpuk di darah dan tidak terserap sel untuk energi, yang dapat merusak mata, ginjal, saraf, jantung, dan pembuluh darah. Ada beberapa jenis, seperti Tipe 1 (autoimun), Tipe 2 (gaya hidup), dan Gestasional (kehamilan.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/Demam.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Demam</h5>
+        <p class="card-text">Demam adalah kondisi tubuh yang memiliki suhu lebih tinggi dari normal, biasanya di atas 38 derajat Celsius, disebabkan oleh infeksi virus atau bakteri, inflamasi, atau reaksi alergi. Demam bisa disertai gejala lain seperti menggigil, lemas, sakit kepala, dan kelelahan. Pada umumnya demam merupakan respons tubuh terhadap penyakit dan biasanya akan mereda setelah tubuh berhasil melawan penyebabnya.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/Flu.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Flu</h5>
+        <p class="card-text">Flu adalah infeksi saluran pernapasan yang disebabkan oleh virus influenza, ditandai dengan gejala seperti demam, batuk, pilek, sakit tenggorokan, nyeri otot, kelelahan, dan sakit kepala. Flu menyebar melalui tetesan udara dari batuk atau bersin orang yang terinfeksi, serta kontak dengan permukaan yang terkontaminasi virus. Kebanyakan kasus flu sembuh dalam beberapa hari hingga dua minggu, namun dapat menyebabkan komplikasi serius pada kelompok rentan seperti anak-anak, lansia, dan penderita penyakit kronis.</p>               
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/Hipertensi.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hipertensi</h5>  
+        <p class="card-text">Hipertensi atau tekanan darah tinggi adalah kondisi medis di mana tekanan darah dalam pembuluh darah terus-menerus tinggi, yang dapat menyebabkan kerusakan pada arteri dan organ tubuh seperti jantung, ginjal, dan otak. Penyebab utamanya adalah faktor genetik, gaya hidup tidak sehat (seperti konsumsi garam berlebih, kurang olahraga, stres), serta beberapa kondisi medis lainnya. Pencegahan meliputi pola makan sehat, olahraga teratur, menghindari alkohol dan merokok, serta pengawasan tekanan darah secara berkala.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/Migrain.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Migrain</h5>
+        <p class="card-text">Migrain adalah jenis sakit kepala yang biasanya disertai dengan nyeri pulsating di satu sisi kepala, mual, muntah, sensitivitas terhadap cahaya dan suara. Migrain dapat disebabkan oleh berbagai faktor seperti stres, perubahan hormon (terutama pada wanita), gangguan tidur, konsumsi makanan tertentu (seperti asam askorbat atau MSG), dan faktor genetik. Pengobatan migrain bisa meliputi obat pereda nyeri ringan hingga obat khusus untuk migrain berat.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/Tipes.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Tipes</h5>
+        <p class="card-text">Tipes atau demam tifoid adalah penyakit infeksi yang disebabkan oleh bakteri Salmonella typhi, ditandai dengan demam tinggi, sakit perut, diare atau sembelit, dan ruam kulit. Penyakit ini menyebar melalui konsumsi makanan atau minuman yang terkontaminasi tinja orang yang terinfeksi. Pencegahan tipes meliputi menjaga kebersihan makanan dan minuman, mencuci tangan dengan sabun, serta vaksinasi bagi mereka yang berisiko tinggi terkena penyakit ini.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/Covid19.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Covid-19</h5>
+        <p class="card-text">Covid-19 adalah penyakit infeksi yang disebabkan oleh virus SARS-CoV-2. Gejala utamanya meliputi demam, batuk kering, kelelahan, dan gangguan pernapasan. Penyebaran virus ini terjadi melalui droplet dari orang terinfeksi. Pencegahan dilakukan dengan menjaga kebersihan tangan, menjaga jarak sosial, serta vaksinasi.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/Asma.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Asma</h5>
+        <p class="card-text">Asma adalah penyakit kronis yang mempengaruhi saluran pernapasan, ditandai dengan penyempitan dan peradangan saluran udara, menyebabkan gejala seperti sesak napas, batuk, mengi, dan dada terasa berat. Serangan asma dapat dipicu oleh alergen, infeksi saluran pernapasan, olahraga, atau polusi udara. Pengelolaan asma melibatkan penggunaan inhaler untuk meredakan gejala dan mengontrol peradangan, serta menghindari pemicu yang dapat memperburuk kondisi.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- FOOTER -->
+ <footer class="footer-section text-white pt-5 pb-3">
+  <div class="container">
+    
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-6 text-center">
+        <h5 class="mb-3 fw-bold"><i class="fas fa-clock me-2"></i>Jam Operasional</h5>
+        <div class="table-responsive">
+          <table class="table table-sm table-borderless text-white mx-auto" style="max-width: 400px;">
+            <tbody>
+              <tr>
+                <td class="text-start">Senin - Jumat</td>
+                <td class="text-end">08:00 - 21:00</td>
+              </tr>
+              <tr>
+                <td class="text-start">Sabtu</td>
+                <td class="text-end">08:00 - 17:00</td>
+              </tr>
+              <tr>
+                <td class="text-start">Minggu / Hari Libur</td>
+                <td class="text-end text-danger fw-bold">Tutup (Emergency Only)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center text-center mb-0">
+      <div class="col-6 col-md-2 mb-3">
+        <a href="https://www.instagram.com/hilman__237/" class="instagram-link">
+          <i class="fab fa-instagram fa-2x mb-2"></i>
+          <p class="username-text">@hilman__237</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <a href="https://www.instagram.com/ftmhazzhra_2/" class="instagram-link">
+          <i class="fab fa-instagram fa-2x mb-2"></i>
+          <p class="username-text">@ftmhazzhra_2</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <a href="https://www.instagram.com/jekisipelaut/" class="instagram-link">
+          <i class="fab fa-instagram fa-2x mb-2"></i>
+          <p class="username-text">@jekisipelaut</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <a href="https://www.instagram.com/pange_ran565/" class="instagram-link">
+          <i class="fab fa-instagram fa-2x mb-2"></i>
+          <p class="username-text">@pange_ran565</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <a href="https://www.instagram.com/_faizkri/" class="instagram-link">
+          <i class="fab fa-instagram fa-2x mb-2"></i>
+          <p class="username-text">@_faizkri</p>
+        </a>
+      </div>
+    </div>
+
+    <hr class="bg-black opacity-25">
+
+    <div class="row">
+      <div class="col text-center">
+        <p class="small mb-0">&copy; 2025 Klinik Sahabat. All Rights Reserved.</p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+document.getElementById("darkBtn").onclick = function () {
+  document.body.classList.toggle("dark");
+};
+</script>
+</body>
+</html>
